@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>View Project</title>
+        <link rel="stylesheet" href="css\bootstrap.min.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="index.html">Project Explorer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="container collapse navbar-collapse" id="navbarSupportedContent">
+                <div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" name ="searchForm" placeholder="Search Projects" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>  
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="createproject.html">Submit</a>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="register.html">Sign Up</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                    </ul> 
+                </div>   
+            </div>      
+        </nav>
+        <main class="w-75 mx-auto">
+            <div class="font-weight-bold mt-5 mb-3 ">Project 1</div>
+            <div class="bg-light container" class= "d-flex justify-content-between" >
+                <div class="row py-2">
+                    <div class="col">
+                        <div>Created by <br> Ade Chris</div>
+                    </div>
+                    <div class="col">
+                        <div>Date Created <br> 2020-08-30</div>
+                    </div>
+                    <div class="col">
+                        <div>Last Updated <br> 2020-08-30</div>
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary form-control-lg">Edit Project</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <form>
+                <div class="container mt-3">
+                    <div class="row form-group">
+                        <div class="col ml-n3"> <div class="font-weight-bold mt-3">Project Abstract</div><hr>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo iste accusamus id, inventore hic nihil tempora dolor quam ut aliquam! Labore nesciunt sed sunt eaque veritatis libero autem voluptatibus commodi!</div>
+                        
+                        <label for ="text "class="font-weight-bold mt-4">Comments</label>
+                        <textarea type="text" class="form-control" rows="4" name="comments" placeholder="Leave a comment..."></textarea>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                        <hr><div class="text-center">No comments added yet</div>
+                        </div>
+
+                        <div class="col ml-n3"> <div class="font-weight-bold mt-3">Project Details</div><hr>
+                        <div class="card mt-3">
+                            <div class="card-header">
+                              Author(s)
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text mb-2">Ade Civis</p>
+                            </div>
+                          </div>
+                        <div class="card mt-3">
+                            <div class="card-header">
+                              Project files
+                            </div>
+                            <div class="card-body">
+                              <p class="card-text text-center">No file uploaded yet</p>
+                            </div>
+                          </div>
+        
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </form>
+        
+        </main>
+        <div class=" mx-auto mt-3 w-75 card-footer  text-muted text-right">Project Explorer &#169 2020 . <strong>Edconnect</strong></div>
+
+    </body>
+</html>            
