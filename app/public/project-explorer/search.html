@@ -40,31 +40,33 @@
         </nav>
         <main class="w-75 mx-auto">
             <div class="font-weight-bold mt-5 mb-3 ">Project Gallery</div>
-            <form>
-                <div class="form-row bg-light p-3 ">
-                    <div class="col-7">
-                        <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
+            <div class=" bg-light p-3">
+                <form>
+                    <div class="form-group form-row ">
+                        <div class="col-7">
+                            <input type="text" name="searchTerm" class="form-control form-control-lg" placeholder="Search project name, authors, abstract, tags">
+                        </div>
+    
+                        <div class="col-5  form-row">
+                            <div class="col-auto">
+                                <label for ="text" class=" bg-secondary form-control-lg">Search by</label>
+                            </div>
+                            <div class="col-auto">
+                                <select name= "searchType" class=" form-control form-control-lg" id="searchType">
+                                    <option value="Name">Name</option>
+                                    <option value="Abstract">Abstract</option>
+                                    <option value="Authors">Authors</option>
+                                    <option value="Tags">Tags</option>
+                                </select>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary form-control-lg">Submit</button>
+                            </div>
+                        </div>
+    
                     </div>
-
-                    <div class="col-5  form-row">
-                        <div class="col-auto">
-                            <label for ="text" class=" bg-secondary form-control-lg">Search by</label>
-                        </div>
-                        <div class="col-auto">
-                            <select name= "searchType" class=" form-control form-control-lg" id="searchType">
-                                <option value="Name">Name</option>
-                                <option value="Abstract">Abstract</option>
-                                <option value="Authors">Authors</option>
-                                <option value="Tags">Tags</option>
-                            </select>
-                        </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn btn-primary form-control-lg">Submit</button>
-                        </div>
-                    </div>
-
-                </div>
-            </form>
+                </form>
+            </div>
 
             <div class="font-weight-bold mt-5 mb-3 ml-1 row">All Projects <div class="text-secondary ml-1"> (0 results)</div></div>
             <div class="container">
